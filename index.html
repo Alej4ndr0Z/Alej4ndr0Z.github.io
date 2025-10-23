@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Tu Nombre</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#about">Tu Nombre</a>
+      <button id="nav-toggle" aria-label="Abrir menú">☰</button>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos de videojuegos</a></li>
+          <li><a href="#showcase">Personajes / Arte / Código</a></li>
+          <li><a href="#contact">Contacto & enlaces</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sobre mí -->
+    <section id="about" class="section container">
+      <h1>Sobre mí</h1>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hola — soy <strong>Tu Nombre</strong>, desarrollador/a de videojuegos y artista. Me especializo en diseño de personajes, arte 2D/3D y programación de gameplay. Aquí muestro algunos proyectos y trabajos destacados.</p>
+          <p>Puedes editar este texto para agregar tu experiencia, herramientas que usas (Unity, Unreal, Godot, Blender, Photoshop, etc.) y un breve resumen de tu formación.</p>
+        </div>
+        <div class="about-cta">
+          <img alt="Avatar" src="https://via.placeholder.com/240x240.png?text=Avatar" />
+          <p class="muted">Ubicación • Disponibilidad • Link a CV</p>
+          <a class="btn" href="#contact">Contactarme</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos de videojuegos -->
+    <section id="projects" class="section container">
+      <h2>Proyectos de videojuegos</h2>
+      <p class="muted">Selección de juegos en los que trabajé. Haz clic para ver detalles.</p>
+      <div class="cards-grid">
+        <!-- Proyecto 1 -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x320.png?text=Proyecto+1" alt="Proyecto 1" />
+          <div class="card-body">
+            <h3>Nombre del juego 1</h3>
+            <p class="muted">Rol: Programación / Diseño / Arte</p>
+            <p>Breve descripción del proyecto: género, plataforma, motores y lo que aportaste.</p>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Demo</a>
+              <a href="#" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="card">
+          <img src="https://via.placeholder.com/600x320.png?text=Proyecto+2" alt="Proyecto 2" />
+          <div class="card-body">
+            <h3>Nombre del juego 2</h3>
+            <p class="muted">Rol: Diseño de nivel / Arte</p>
+            <p>Descripción corta con highlights: mecánicas únicas, herramientas usadas y resultados.</p>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Video</a>
+              <a href="#" target="_blank" rel="noopener">Postmortem</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Añade más cards según necesites -->
+      </div>
+    </section>
+
+    <!-- Personajes / Arte / Código Destacado -->
+    <section id="showcase" class="section container">
+      <h2>Personajes • Arte • Código destacado</h2>
+      <p class="muted">Muestras rápidas de arte, personajes y snippets de código que quiero resaltar.</p>
+
+      <div class="showcase-grid">
+        <figure class="showcase-item">
+          <img src="https://via.placeholder.com/480x480.png?text=Personaje+1" alt="Personaje 1" />
+          <figcaption>
+            <strong>Personaje 1</strong>
+            <p class="muted">Descripción breve: concepto, inspiración, herramientas.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="showcase-item">
+          <img src="https://via.placeholder.com/480x270.png?text=Arte+2D" alt="Arte 2D" />
+          <figcaption>
+            <strong>Arte 2D — Scene</strong>
+            <p class="muted">Técnicas usadas: color, composición, postprocesado.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="showcase-item code">
+          <pre><code>// Ejemplo mínimo de snippet de código
+function damage(target, amount) {
+  target.hp = Math.max(0, target.hp - amount);
+  if (target.hp === 0) onDeath(target);
+}</code></pre>
+          <figcaption>
+            <strong>Snippet: Lógica de daño</strong>
+            <p class="muted">Lenguaje: JavaScript / C# / GDScript — breve explicación.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contacto y enlaces -->
+    <section id="contact" class="section container">
+      <h2>Contacto & enlaces</h2>
+      <p>Estoy disponible para colaboraciones y trabajos freelance. Aquí tienes mis enlaces y formulario de contacto rápido.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Enlaces</h3>
+          <ul class="links-list">
+            <li><a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.artstation.com/tu-usuario" target="_blank" rel="noopener">ArtStation</a></li>
+            <li><a href="https://twitter.com/tu-usuario" target="_blank" rel="noopener">Twitter / X</a></li>
+            <li><a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <h3>Formulario</h3>
+          <form id="contact-form" action="#" method="post" onsubmit="alert('Envía el formulario a tu backend o reemplaza este comportamiento.'); return false;">
+            <label>
+              Nombre
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Mensaje
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tu Nombre — Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
