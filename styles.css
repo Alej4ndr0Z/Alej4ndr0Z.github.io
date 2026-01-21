@@ -62,12 +62,11 @@ body{
 .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;padding:.6rem .9rem;border-radius:8px;text-decoration:none;border:0;cursor:pointer}
 
 /* Cards */
-.cards-grid{display:flex;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:1rem}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-top:1rem}
 .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
 .card img{width:100%;height:auto;object-fit:contain;display:block}
 .card-body{padding:1rem}
 .card-links a{margin-right:0.75rem;color:var(--accent-2);text-decoration:none}
-.project-title{font-size:1.2rem;font-weight: bold;color: #fff;}
 
 /* Showcase */
 .showcase-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1rem}
